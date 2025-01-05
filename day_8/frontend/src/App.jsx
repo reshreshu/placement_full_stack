@@ -1,22 +1,28 @@
-import './App.css';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
-import Home from './components/Home';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import SignUpForm from './components/SignUp';
 import Login from './components/Login';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './components/Home';
+import About from './components/About';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element ={<Home/>} />
-        <Route path="/SignUp" element ={<SignUpForm/>} />
-        <Route path="/Login" element ={<Login/>} />
-      </Routes> 
-      </BrowserRouter>
-      </div>
+        {/* Default route: Signup */}
+        <Route path="/" element={<SignUpForm />} />
+        <Route path="/signup" element={<SignUpForm />} />
+        <Route path="/login" element={<Login />} />
+
+        {/* Home and other pages */}
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
