@@ -4,18 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index.js",
+=======
+    "start": "node index.js",
+>>>>>>> 2ec1414a0f2cd9510d1b3c941d174761d7c0a201
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.9.3",
     "nodemon": "^3.1.9",
     "path": "^0.12.7"
+=======
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+>>>>>>> 2ec1414a0f2cd9510d1b3c941d174761d7c0a201
   }
 }

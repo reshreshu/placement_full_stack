@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //server creation
 var express = require("express");
 var app = express();
@@ -108,3 +109,20 @@ app.listen(PORT, () => {
   console.log(`Backend server started...\nUrl:http://localhost:${PORT}`);
 });
 
+=======
+var express=require('express')
+var app=express()
+const PORT=3002
+app.get('/',(req,res)=>{
+    res.send('THIS IS RESHMA ALAVUTHEEN')
+})
+app.get('/json',(req,res)=>{
+    res.send({server:"Welcome",url:"localhost",port:PORT})
+})
+app.get('/static',(req,res)=>{
+    res.sendFile('C:/Users/reshm/OneDrive/Desktop/full_stack/backend_day6/index.html')
+})
+app.listen(PORT,()=>{
+    console.log(`Backend server connected\nUrl:http://localhost:${PORT}`);
+})
+>>>>>>> 2ec1414a0f2cd9510d1b3c941d174761d7c0a201
